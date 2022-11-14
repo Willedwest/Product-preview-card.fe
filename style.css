@@ -1,0 +1,151 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container{
+  display: grid;
+  width: 100%;
+  max-width: 800px;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 5px;
+}
+
+.container .showcase{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.container .showcase h3{
+  color: hsl(228, 12%, 48%);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.container .showcase h1{
+  font-family: 'fraunces', sans-serif;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 30px;
+  color: hsl(212, 21%, 14%);
+}
+
+.container .showcase p{
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 30px;
+  line-height: 1.5rem;
+}
+
+.container .showcase .price-tag{
+  color: hsl(158, 36%, 37%);
+  font-family: fraunces, sans-serif;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .showcase .price-tag span{
+  font-size: 1.1rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+button{
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: hsl(158, 47%, 26%);
+}
+
+.container picture img {
+  max-width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  
+  body{
+    margin: 50px 0;
+  }
+
+  .container picture img {
+    max-width: 100%;
+    height: 100%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+
+  .container .showcase {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: none;
+    padding: 0 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
